@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-15T08:57:12 IST" name="Default suite" finished-at="2023-02-15T08:57:18 IST" duration-ms="5610">
+  <suite started-at="2023-02-17T08:53:38 IST" name="Default suite" finished-at="2023-02-17T08:53:43 IST" duration-ms="4209">
     <groups>
     </groups>
-    <test started-at="2023-02-15T08:57:12 IST" name="Default test" finished-at="2023-02-15T08:57:18 IST" duration-ms="5610">
-      <class name="basic.POST_CreateUser">
-        <test-method signature="createUser()[pri:0, instance:basic.POST_CreateUser@4a7f959b]" started-at="2023-02-15T08:57:12 IST" name="createUser" finished-at="2023-02-15T08:57:18 IST" duration-ms="5511" status="PASS">
+    <test started-at="2023-02-17T08:53:38 IST" name="Default test" finished-at="2023-02-17T08:53:43 IST" duration-ms="4209">
+      <class name="complexjson.JsonFileValidation">
+        <test-method signature="getPurchaseAmount()[pri:1, instance:complexjson.JsonFileValidation@7e5afaa6]" started-at="2023-02-17T08:53:38 IST" name="getPurchaseAmount" finished-at="2023-02-17T08:53:42 IST" duration-ms="3100" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUser -->
-      </class> <!-- basic.POST_CreateUser -->
+        </test-method> <!-- getPurchaseAmount -->
+        <test-method signature="getCourseCount()[pri:2, instance:complexjson.JsonFileValidation@7e5afaa6]" started-at="2023-02-17T08:53:42 IST" name="getCourseCount" finished-at="2023-02-17T08:53:42 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCourseCount -->
+        <test-method signature="getfirstCourseTitle()[pri:3, instance:complexjson.JsonFileValidation@7e5afaa6]" started-at="2023-02-17T08:53:42 IST" name="getfirstCourseTitle" finished-at="2023-02-17T08:53:42 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getfirstCourseTitle -->
+        <test-method signature="getCourseTitleWithPrice()[pri:4, instance:complexjson.JsonFileValidation@7e5afaa6]" started-at="2023-02-17T08:53:42 IST" name="getCourseTitleWithPrice" finished-at="2023-02-17T08:53:42 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCourseTitleWithPrice -->
+        <test-method signature="getCourseCopies()[pri:5, instance:complexjson.JsonFileValidation@7e5afaa6]" started-at="2023-02-17T08:53:42 IST" name="getCourseCopies" finished-at="2023-02-17T08:53:43 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCourseCopies -->
+      </class> <!-- complexjson.JsonFileValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
