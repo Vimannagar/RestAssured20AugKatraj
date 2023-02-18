@@ -7,12 +7,12 @@ public class JsonContainer {
 	{
 		String s = "{\r\n"
 				+ "  \"id\": 0,\r\n"
-				+ "  \"username\": \"katraj21august\",\r\n"
-				+ "  \"firstName\": \"Test\",\r\n"
-				+ "  \"lastName\": \"Engg\",\r\n"
-				+ "  \"email\": \"katraj21august@gmail.com\",\r\n"
+				+ "  \"username\": \"katraj22august\",\r\n"
+				+ "  \"firstName\": \"UserTest\",\r\n"
+				+ "  \"lastName\": \"QAEngg\",\r\n"
+				+ "  \"email\": \"katraj22august@gmail.com\",\r\n"
 				+ "  \"password\": \"Test@1234\",\r\n"
-				+ "  \"phone\": \"1234567892\",\r\n"
+				+ "  \"phone\": \"1234567893\",\r\n"
 				+ "  \"userStatus\": 0\r\n"
 				+ "}";
 		

@@ -1,5 +1,6 @@
 package complexjson;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.path.json.JsonPath;
@@ -79,6 +80,34 @@ public class JsonFileValidation {
 				}
 			
 			}
+			
+		}
+		
+		
+		@Test(priority = 6)
+		public void validateTotalPrice()
+		{
+			int sum = 0;
+			JsonPath jp = new JsonPath(JsonContainer.sampleJson());
+			int totalpurchasevalue= jp.getInt("dashboard.purchaseAmount");
+			
+			int countofcourse = jp.getInt("courses.size()");
+			
+			for(int i=0; i<countofcourse; i++)
+			{
+				 int price = jp.getInt("courses["+i+"].price");
+				 
+				 int copies = jp.getInt("courses["+i+"].copies");
+				 
+				sum= sum+ copies*price;
+				 
+			}
+			
+			
+			Assert.assertEquals(totalpurchasevalue, sum);
+			
+			
+			
 			
 		}
 
