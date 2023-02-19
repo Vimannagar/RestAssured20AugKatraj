@@ -23,7 +23,7 @@ RequestSpecification req = new RequestSpecBuilder()
 
 	
 
-	RequestSpecification request = given().spec(req).body(JsonContainer.createUserBody());
+	RequestSpecification request = given().log().all().spec(req).body(JsonContainer.createUserBody());
 
 	 ResponseSpecification resspec = new ResponseSpecBuilder()
 			 							.expectStatusCode(200)
