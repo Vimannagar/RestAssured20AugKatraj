@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import pojo.RequestBody;
+import pojo.ResponseBody;
 
 import static io.restassured.RestAssured.*;
 
@@ -14,33 +15,41 @@ public class CreateUser {
 	{
 		RequestBody requestbody = new RequestBody();
 		
-		requestbody.setEmail("test@test1.com");
+		requestbody.setEmail("test@test2.com");
 		
-		requestbody.setFirstName("Edward");
+		requestbody.setFirstName("Jack");
 		
 		requestbody.setId(0);
 		
-		requestbody.setLastName("Pinto");
+		requestbody.setLastName("Douglous");
 		
 		requestbody.setPassword("Test@12345");
 		
-		requestbody.setPhone("9988776655");
+		requestbody.setPhone("9988766655");
 		
-		requestbody.setUsername("mredward");
+		requestbody.setUsername("mrdouglous");
 		
 		requestbody.setUserStatus(0);
 		
 		
 		RestAssured.baseURI = "https://petstore.swagger.io/v2";
 		
-		given().log().all().header("Content-Type", "application/json")
-		.body(requestbody)
-		.when()
-		.post("user")
-		.then()
-		.log().all()
-		.extract()
-		.response();
+		ResponseBody responsebody= given().log().all().header("Content-Type", "application/json")
+						.body(requestbody)
+						.when()
+						.post("user")
+						.then()
+						.log().all()
+						.extract()
+						.response().as(ResponseBody.class);
+		
+		int statuscode = responsebody.getCode();
+		System.out.println(statuscode);
+		
+		String messagevalue = responsebody.getMessage();
+		System.out.println(messagevalue);
+		
+		
 	}
 
 }

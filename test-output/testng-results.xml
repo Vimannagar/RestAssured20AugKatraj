@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-19T09:04:37 IST" name="Default suite" finished-at="2023-02-19T09:04:45 IST" duration-ms="7498">
+  <suite started-at="2023-02-20T08:38:34 IST" name="Default suite" finished-at="2023-02-20T08:38:40 IST" duration-ms="5920">
     <groups>
     </groups>
-    <test started-at="2023-02-19T09:04:37 IST" name="Default test" finished-at="2023-02-19T09:04:45 IST" duration-ms="7498">
-      <class name="serializeanddeserialize.CreateUser">
-        <test-method signature="createUser()[pri:0, instance:serializeanddeserialize.CreateUser@32b260fa]" started-at="2023-02-19T09:04:37 IST" name="createUser" finished-at="2023-02-19T09:04:45 IST" duration-ms="7373" status="PASS">
+    <test started-at="2023-02-20T08:38:34 IST" name="Default test" finished-at="2023-02-20T08:38:40 IST" duration-ms="5920">
+      <class name="readjsonfromfile.ParseJsonFromFile">
+        <test-method signature="createUserFromFile()[pri:0, instance:readjsonfromfile.ParseJsonFromFile@581ac8a8]" started-at="2023-02-20T08:38:35 IST" name="createUserFromFile" finished-at="2023-02-20T08:38:40 IST" duration-ms="5810" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUser -->
-      </class> <!-- serializeanddeserialize.CreateUser -->
+        </test-method> <!-- createUserFromFile -->
+      </class> <!-- readjsonfromfile.ParseJsonFromFile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
