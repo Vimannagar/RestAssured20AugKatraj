@@ -9,7 +9,7 @@ import io.restassured.path.json.JsonPath;
 
 import static io.restassured.RestAssured.*;
 
-public class Login {
+public class Login extends BaseTest{
 	
 	
 	@Test
@@ -32,12 +32,21 @@ LoginResponse loginresponse = given()
 		.when()
 		.post("/api/ecom/auth/login")
 		.then()
+		.log().all()
 		.extract()
 		.response().as(LoginResponse.class);
 
 String tokenvalue = loginresponse.getToken();
 
 System.out.println(tokenvalue);
+
+String uid = loginresponse.getUserId();
+
+
+userid = uid;
+
+
+token = tokenvalue;
 
 		
 

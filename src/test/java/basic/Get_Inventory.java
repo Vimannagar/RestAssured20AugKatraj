@@ -25,6 +25,8 @@ public class Get_Inventory {
 		
 		int scode = response.statusCode();
 		
+		
+		
 		System.out.println(scode);
 	}
 
