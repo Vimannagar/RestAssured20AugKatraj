@@ -14,9 +14,16 @@ public class DeleteProduct extends BaseTest {
 	{
 		RestAssured.baseURI = "https://www.rahulshettyacademy.com";
 		
-		given()
+String response = given()
 		.header("Content-Type", "application/json")
-		.header("Authorization", token);
+		.header("Authorization", token)
+		.pathParam("productid", productId)
+		.when()
+		.delete("/api/ecom/product/delete-product/{productid}")
+		.then()
+		.log().all()
+		.extract().response().asPrettyString();
+		
 		
 		
 		

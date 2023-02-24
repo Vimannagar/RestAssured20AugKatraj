@@ -6,6 +6,7 @@
     <class name="ecomapi.Login"/>
       <class name="ecomapi.AddProduct"/>
       	<class name="ecomapi.PlaceOrder"/>
+      		<class name="ecomapi.DeleteProduct"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

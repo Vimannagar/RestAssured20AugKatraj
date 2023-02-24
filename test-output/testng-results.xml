@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-21T09:03:44 IST" name="Default suite" finished-at="2023-02-21T09:03:50 IST" duration-ms="6078">
+  <suite started-at="2023-02-24T08:31:55 IST" name="Suite" finished-at="2023-02-24T08:32:04 IST" duration-ms="8570">
     <groups>
     </groups>
-    <test started-at="2023-02-21T09:03:44 IST" name="Default test" finished-at="2023-02-21T09:03:50 IST" duration-ms="6078">
+    <test started-at="2023-02-24T08:31:55 IST" name="Test" finished-at="2023-02-24T08:32:04 IST" duration-ms="8570">
+      <class name="ecomapi.AddProduct">
+        <test-method signature="addProduct()[pri:0, instance:ecomapi.AddProduct@7133da86]" started-at="2023-02-24T08:32:01 IST" name="addProduct" finished-at="2023-02-24T08:32:03 IST" duration-ms="2500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+      </class> <!-- ecomapi.AddProduct -->
+      <class name="ecomapi.PlaceOrder">
+        <test-method signature="addProduct()[pri:0, instance:ecomapi.PlaceOrder@3232a28a]" started-at="2023-02-24T08:32:03 IST" name="addProduct" finished-at="2023-02-24T08:32:04 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+      </class> <!-- ecomapi.PlaceOrder -->
       <class name="ecomapi.Login">
-        <test-method signature="loginToApp()[pri:0, instance:ecomapi.Login@32b260fa]" started-at="2023-02-21T09:03:44 IST" name="loginToApp" finished-at="2023-02-21T09:03:50 IST" duration-ms="5964" status="PASS">
+        <test-method signature="loginToApp()[pri:0, instance:ecomapi.Login@78123e82]" started-at="2023-02-24T08:31:55 IST" name="loginToApp" finished-at="2023-02-24T08:32:01 IST" duration-ms="5402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
       </class> <!-- ecomapi.Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="ecomapi.DeleteProduct">
+        <test-method signature="addProduct()[pri:0, instance:ecomapi.DeleteProduct@73e22a3d]" started-at="2023-02-24T08:32:04 IST" name="addProduct" finished-at="2023-02-24T08:32:04 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+      </class> <!-- ecomapi.DeleteProduct -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
